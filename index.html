@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scholar's Cup Prep Dashboard</title>
+  <title>Scholar's Cup Prep — Are We There Yet? · Bangkok 2026</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,12 @@
       <div class="logo">SC</div>
       <div>
         <div class="brand-title">Scholar's Cup Prep</div>
-        <div class="brand-sub">Regional Round · Thailand</div>
+        <div class="brand-sub">Are We There Yet? · Global Round Bangkok 2026</div>
       </div>
     </div>
     <nav class="tabs" id="tabs">
       <button class="tab active" data-tab="dashboard">Dashboard</button>
+      <button class="tab" data-tab="topics">Topic Quizzes</button>
       <button class="tab" data-tab="about">About</button>
       <button class="tab" data-tab="study">Study Guide</button>
       <button class="tab" data-tab="questions">Question Bank</button>
@@ -37,7 +38,7 @@
     <section class="view active" data-view="dashboard">
       <div class="hero">
         <h1>Welcome back, Scholar.</h1>
-        <p class="lead">A focused, daily-use dashboard for the World Scholar's Cup regional round in Thailand. Study the six subjects, drill the question bank, run flashcards, and rehearse debate. Your progress is saved automatically in this browser.</p>
+        <p class="lead">A focused, daily-use dashboard for the World Scholar's Cup Global Round in Bangkok, August 2026. Drill the 15 official <em>Are We There Yet?</em> curriculum topics, run the question bank and flashcards, and rehearse debate. Your progress is saved automatically in this browser.</p>
       </div>
 
       <div class="stats-grid">
@@ -71,6 +72,7 @@
         <div class="panel">
           <h2>Quick Start</h2>
           <div class="quick-actions">
+            <button class="action" data-go="topics">Topic Quiz — 2026 Curriculum</button>
             <button class="action" data-go="questions" data-mode="random10">10-Question Warm-up</button>
             <button class="action" data-go="questions" data-mode="random25">25-Question Quiz</button>
             <button class="action" data-go="flashcards">Flashcards Session</button>
@@ -82,6 +84,16 @@
           <div id="daily-tip" class="tip"></div>
         </div>
       </div>
+    </section>
+
+    <!-- TOPIC QUIZZES -->
+    <section class="view" data-view="topics">
+      <h1>Topic Quizzes — <em>Are We There Yet?</em></h1>
+      <p class="lead">The 15 official guiding sections of the 2026 curriculum, each with its own question bank and study notes. Take a 25-question quiz on any topic — every new quiz serves questions you haven't seen before.</p>
+      <div id="topics-home"></div>
+      <div id="topic-detail" class="hidden"></div>
+      <div id="tq-runner" class="hidden"></div>
+      <div id="tq-results" class="hidden"></div>
     </section>
 
     <!-- ABOUT -->
@@ -217,6 +229,23 @@
   <script src="js/data-questions.js"></script>
   <script src="js/data-flashcards.js"></script>
   <script src="js/data-content.js"></script>
+  <script src="js/topics/registry.js"></script>
+  <script src="js/topics/introductory-questions.js"></script>
+  <script src="js/topics/progress-not-regress.js"></script>
+  <script src="js/topics/more-to-do.js"></script>
+  <script src="js/topics/the-end-is-nearish.js"></script>
+  <script src="js/topics/theres-a-draft.js"></script>
+  <script src="js/topics/were-all-in-this.js"></script>
+  <script src="js/topics/where-the-sidewalk-starts.js"></script>
+  <script src="js/topics/monkey-see.js"></script>
+  <script src="js/topics/the-lovely-and-the-liminal.js"></script>
+  <script src="js/topics/going-pains.js"></script>
+  <script src="js/topics/home-and-wandering.js"></script>
+  <script src="js/topics/roads-and-futures.js"></script>
+  <script src="js/topics/call-of-duty-free.js"></script>
+  <script src="js/topics/next-year-in-futurism.js"></script>
+  <script src="js/topics/concluding-questions.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/topic-quiz.js"></script>
 </body>
 </html>
